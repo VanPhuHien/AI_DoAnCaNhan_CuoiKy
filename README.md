@@ -31,7 +31,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
   - [1. SHC – Simple Hill Climbing](#1-SHC--simple-hill-climbing)  
   - [2. SAHC – Steepest Ascent Hill Climbing](#2-SAHC--steepest-ascent-hill-climbing)  
   - [3. Stochastic – Stochastic Hill Climbing](#3-Stochastic--stochastic-hill-climbing)  
-  - [4. SA – SimulatedAnnealing](#4-SA--simulatedannealing)  
+  - [4. SA – Simulated Annealing](#4-SA--simulated-annealing)  
   - [5. BS – Beam Search](#5-BS--beam-search)
 
 ## I. Uninformed Search Algorithms
