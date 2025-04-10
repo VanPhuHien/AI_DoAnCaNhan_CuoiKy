@@ -52,13 +52,13 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 ## II. Informed Search Algorithms
 
-### 1. aStar – A* Search
+### 1. a_star – A* Search
 ![A* demo](gifs/astar.gif)
 
 ### 2. greedy – Greedy Best-First Search
 ![Greedy demo](gifs/greedy.gif)
 
-### 3. idaStar – Iterative Deepening A*
+### 3. ida_star – Iterative Deepening A*
 ![IDA* demo](gifs/idastar.gif)
 
 ---
@@ -71,12 +71,12 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 ### 2. SAHC – Steepest Ascent Hill Climbing
 ![SAHC demo](gifs/sahc.gif)
 
-### 3. StochasticHC – Stochastic Hill Climbing
+### 3. Stochastic – Stochastic Hill Climbing
 ![Stochastic demo](gifs/stochastichc.gif)
 
-### 4. SimAnn – SimulatedAnnealing
+### 4. SA – Simulated Annealing
 ![Simulated Annealing demo](gifs/simann.gif)
 
-### 5. BeamSearch – Beam Search
+### 5. BS – Beam Search
 ![Beam Search demo](gifs/beamsearch.gif)
 
