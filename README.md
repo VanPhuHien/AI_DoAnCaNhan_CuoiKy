@@ -28,11 +28,11 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
   - [3. ida_star – Iterative Deepening A*](#3-ida_star--iterative-deepening-a)  
 
 - [III. Local Search Algorithms](#iii-local-search-algorithms)  
-  - [1. SHC – Simple Hill Climbing](#1-shc--simple-hill-climbing)  
-  - [2. SAHC – Steepest Ascent Hill Climbing](#2-sahc--steepest-ascent-hill-climbing)  
-  - [3. Stochastic – Stochastic Hill Climbing](#3-stochastichc--stochastic-hill-climbing)  
-  - [4. SA – SimulatedAnnealing](#4-simann--simulatedannealing)  
-  - [5. BS – Beam Search](#5-beamsearch--beam-search)
+  - [1. SHC – Simple Hill Climbing](#1-SHC--simple-hill-climbing)  
+  - [2. SAHC – Steepest Ascent Hill Climbing](#2-SAHC--steepest-ascent-hill-climbing)  
+  - [3. Stochastic – Stochastic Hill Climbing](#3-Stochastic--stochastic-hill-climbing)  
+  - [4. SA – SimulatedAnnealing](#4-SA--simulatedannealing)  
+  - [5. BS – Beam Search](#5-BS--beam-search)
 
 ## I. Uninformed Search Algorithms
 
