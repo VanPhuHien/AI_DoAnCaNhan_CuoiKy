@@ -53,13 +53,13 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 ## II. Informed Search Algorithms
 
 ### 1. a_star – A* Search
-![A* demo](gifs/astar.gif)
+![A* demo](gifs/a_star.gif)
 
 ### 2. greedy – Greedy Best-First Search
 ![Greedy demo](gifs/greedy.gif)
 
 ### 3. ida_star – Iterative Deepening A*
-![IDA* demo](gifs/idastar.gif)
+![IDA* demo](gifs/ida_star.gif)
 
 ---
 
