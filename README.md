@@ -66,17 +66,17 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 ## III. Local Search Algorithms
 
 ### 1. SHC – Simple Hill Climbing
-![SHC demo](gifs/shc.gif)
+![SHC demo](gifs/SHC.gif)
 
 ### 2. SAHC – Steepest Ascent Hill Climbing
-![SAHC demo](gifs/sahc.gif)
+![SAHC demo](gifs/SAHC.gif)
 
 ### 3. Stochastic – Stochastic Hill Climbing
-![Stochastic demo](gifs/stochastichc.gif)
+![Stochastic demo](gifs/Stochastic.gif)
 
 ### 4. SA – Simulated Annealing
-![Simulated Annealing demo](gifs/simann.gif)
+![Simulated Annealing demo](gifs/SA.gif)
 
 ### 5. BS – Beam Search
-![Beam Search demo](gifs/beamsearch.gif)
+![Beam Search demo](gifs/BS.gif)
 
