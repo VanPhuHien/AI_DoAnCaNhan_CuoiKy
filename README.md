@@ -30,25 +30,25 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 ## 2. Nội dung
 
-## 2.1. Uninformed Search Algorithms (Các thuật toán tìm kiếm không có thông tin)
+### 2.1. Uninformed Search Algorithms (Các thuật toán tìm kiếm không có thông tin)
 
-### 2.1.1. Các thành phần chính của bài toán tìm kiếm
+#### 2.1.1. Các thành phần chính của bài toán tìm kiếm và giải pháp
 - **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống.
 - | Trạng thái bắt đầu | Trạng thái đích |
   |--------------------|---------------------|
   | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
 - **Tập hành động**: Lên, xuống, trái phải.
-  
-#### 1. bfs – Breadth-First Search
+- **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
+- **Giải pháp**: 
+
+#### 2.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
+- **bfs – Breadth-First Search**
 ![BFS demo](gifs/bfs.gif)
-
-#### 2. dfs – Depth-First Search
+- **dfs – Depth-First Search**
 ![DFS demo](gifs/dfs.gif)
-
-#### 3. ucs – Uniform Cost Search
+- **ucs – Uniform Cost Search**
 ![UCS demo](gifs/ucs.gif)
-
-#### 4. ids – Iterative Deepening Search
+- **ids – Iterative Deepening Search**
 ![IDS demo](gifs/ids.gif)
 
 ---
