@@ -42,13 +42,13 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Giải pháp**: 
 
 #### 2.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-##### **1. bfs – Breadth-First Search**
+- ##### **1. bfs – Breadth-First Search**
 ![BFS demo](gifs/bfs.gif)
-##### **2. dfs – Depth-First Search**
+- ##### **2. dfs – Depth-First Search**
 ![DFS demo](gifs/dfs.gif)
-##### **3. ucs – Uniform Cost Search**
+- ##### **3. ucs – Uniform Cost Search**
 ![UCS demo](gifs/ucs.gif)
-##### **4. ids – Iterative Deepening Search**
+- ##### **4. ids – Iterative Deepening Search**
 ![IDS demo](gifs/ids.gif)
 
 ---
