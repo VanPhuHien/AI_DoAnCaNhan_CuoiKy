@@ -32,14 +32,18 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 ### 2.1. Uninformed Search Algorithms (Các thuật toán tìm kiếm không có thông tin)
 
-#### 2.1.1. Các thành phần chính của bài toán tìm kiếm và giải pháp
+#### 2.1.1. Các thành phần chính của bài toán tìm kiếm và Solution
 - **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống.
+  
 - | Trạng thái bắt đầu | Trạng thái đích |
   |--------------------|---------------------|
   | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
+  
 - **Tập hành động**: Lên, xuống, trái phải.
+  
 - **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
-- **Giải pháp**: 
+  
+- **Solution**: Một chuỗi các trạng thái được áp dụng các hành động để chuyển từ trạng thái ban đầu thành trạng thái đích.
 
 #### 2.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
 #### **1. bfs – Breadth-First Search**
@@ -53,36 +57,37 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 ---
 
-## 2.2. Informed Search Algorithms (Các thuật toán tìm kiếm có thông tin)
+### 2.2. Informed Search Algorithms (Các thuật toán tìm kiếm có thông tin)
 
-### 1. a_star – A* Search
+#### 2.2.1. Các thành phần chính của bài toán tìm kiếm và Solution
+
+#### 2.2.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
+#### 1. a_star – A* Search
 ![A* demo](gifs/a_star.gif)
-
-### 2. greedy – Greedy Best-First Search
+#### 2. **greedy – Greedy Best-First Search**
 ![Greedy demo](gifs/greedy.gif)
-
-### 3. ida_star – Iterative Deepening A*
+#### 3. **ida_star – Iterative Deepening A***
 ![IDA* demo](gifs/ida_star.gif)
 
 ---
 
-## 2.3. Local Search Algorithms (Các thuật toán tìm kiếm cục bộ)
+### 2.3. Local Search Algorithms (Các thuật toán tìm kiếm cục bộ)
 
-### 1. SHC – Simple Hill Climbing
+#### 2.3.1. Các thành phần chính của bài toán tìm kiếm và Solution
+
+#### 2.3.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
+#### **1. SHC – Simple Hill Climbing**
 ![SHC demo](gifs/SHC.gif)
 
-### 2. SAHC – Steepest Ascent Hill Climbing
+#### **2. SAHC – Steepest Ascent Hill Climbing**
 ![SAHC demo](gifs/SAHC.gif)
 
-### 3. Stochastic – Stochastic Hill Climbing
+#### **3. Stochastic – Stochastic Hill Climbing**
 ![Stochastic demo](gifs/Stochastic.gif)
 
-### 4. SA – Simulated Annealing
+#### **4. SA – Simulated Annealing**
 ![Simulated Annealing demo](gifs/SA.gif)
 
-
-
-
-### 5. BS – Beam Search
+#### **5. BS – Beam Search**
 ![Beam Search demo](gifs/BS.gif)
 
