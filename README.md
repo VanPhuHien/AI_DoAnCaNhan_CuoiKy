@@ -2,7 +2,7 @@
 
 ## Mục tiêu
 
-Dự án cá nhân nhằm mục tiêu tìm hiểu, triển khai và đánh giá hiệu quả của các thuật toán tìm kiếm áp dụng vào việc giải bài toán **8-puzzle** — yêu cầu sắp xếp lại các ô số từ trạng thái ban đầu (Start State) sao cho đúng với trạng thái đích (Goal State) thông qua các thao tác di chuyển hợp lệ.
+Tìm hiểu, triển khai và đánh giá hiệu suất của các thuật toán tìm kiếm áp dụng vào giải bài toán **8-puzzle** — yêu cầu sắp xếp lại các ô số từ trạng thái ban đầu (Start State) sao cho đúng với trạng thái đích (Goal State) thông qua các hành động di chuyển hợp lệ.
 
 Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**
 
@@ -76,6 +76,9 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 ### 4. SA – Simulated Annealing
 ![Simulated Annealing demo](gifs/SA.gif)
+
+
+
 
 ### 5. BS – Beam Search
 ![Beam Search demo](gifs/BS.gif)
