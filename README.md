@@ -1,18 +1,12 @@
 # Đồ án cá nhân cuối kỳ - AI
 
-## Mục tiêu
+## 1. Mục tiêu
 
 Tìm hiểu, triển khai và đánh giá hiệu suất của các thuật toán tìm kiếm áp dụng vào giải bài toán **8-puzzle** — yêu cầu sắp xếp lại các ô số từ trạng thái ban đầu (Start State) sao cho đúng với trạng thái đích (Goal State) thông qua các hành động di chuyển hợp lệ.
 
 Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**
 
 > Sinh viên thực hiện [Văn Phú Hiền - 23110213](#)
-
-### Minh họa trạng thái
-
-| Start State | Goal State |
-|--------------------|---------------------|
-| ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
 
 ## Mục lục - Các nhóm thuật toán
 
@@ -34,23 +28,30 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
   - [4. SA – Simulated Annealing](#4-SA--simulated-annealing)  
   - [5. BS – Beam Search](#5-BS--beam-search)
 
-## I. Uninformed Search Algorithms
+## 2. Nội dung
 
-### 1. bfs – Breadth-First Search
+## 2.1. Uninformed Search Algorithms (Các thuật toán tìm kiếm không có thông tin)
+
+### 2.1.1. Các thành phần chính của bài toán tìm kiếm
+| Start State | Goal State |
+|--------------------|---------------------|
+| ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
+
+#### 1. bfs – Breadth-First Search
 ![BFS demo](gifs/bfs.gif)
 
-### 2. dfs – Depth-First Search
+#### 2. dfs – Depth-First Search
 ![DFS demo](gifs/dfs.gif)
 
-### 3. ucs – Uniform Cost Search
+#### 3. ucs – Uniform Cost Search
 ![UCS demo](gifs/ucs.gif)
 
-### 4. ids – Iterative Deepening Search
+#### 4. ids – Iterative Deepening Search
 ![IDS demo](gifs/ids.gif)
 
 ---
 
-## II. Informed Search Algorithms
+## 2.2. Informed Search Algorithms (Các thuật toán tìm kiếm có thông tin)
 
 ### 1. a_star – A* Search
 ![A* demo](gifs/a_star.gif)
@@ -63,7 +64,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 ---
 
-## III. Local Search Algorithms
+## 2.3. Local Search Algorithms (Các thuật toán tìm kiếm cục bộ)
 
 ### 1. SHC – Simple Hill Climbing
 ![SHC demo](gifs/SHC.gif)
