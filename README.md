@@ -14,7 +14,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 |--------------------|---------------------|
 | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
 
-## Mục lục
+## Mục lục - Các nhóm thuật toán
 
 - [I. Uninformed Search Algorithms](#i-uninformed-search-algorithms)  
   - [1. bfs – Breadth-First Search](#1-bfs--breadth-first-search)  
