@@ -2,7 +2,7 @@
 
 ## 1. Mục tiêu
 
-Tìm hiểu, triển khai và đánh giá hiệu suất của các thuật toán tìm kiếm áp dụng vào giải bài toán **8-puzzle** — yêu cầu sắp xếp lại các ô số từ trạng thái ban đầu (Start State) sao cho đúng với trạng thái đích (Goal State) thông qua các hành động di chuyển hợp lệ.
+Đồ án tập trung vào xây dựng chương trình giải bài toán **8-puzzle** nhằm mục tiêu tìm hiểu, triển khai và đánh giá hiệu suất của các thuật toán tìm kiếm khi áp dụng vào bài toán — yêu cầu sắp xếp lại các ô số từ trạng thái ban đầu (Start State) sao cho đúng với trạng thái đích (Goal State) thông qua các hành động di chuyển hợp lệ.
 
 Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**
 
@@ -33,10 +33,13 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 ## 2.1. Uninformed Search Algorithms (Các thuật toán tìm kiếm không có thông tin)
 
 ### 2.1.1. Các thành phần chính của bài toán tìm kiếm
-| Start State | Goal State |
+- **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống.
+| Trạng thái bắt đầu | Trạng thái đích |
 |--------------------|---------------------|
 | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
 
+- **Tập hành động**: Lên, xuống, trái phải.
+  
 #### 1. bfs – Breadth-First Search
 ![BFS demo](gifs/bfs.gif)
 
