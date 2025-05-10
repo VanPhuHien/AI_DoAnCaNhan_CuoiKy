@@ -34,9 +34,9 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 ### 2.1.1. Các thành phần chính của bài toán tìm kiếm
 - **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống.
-- **| Trạng thái bắt đầu | Trạng thái đích |**
-    |--------------------|---------------------|
-    | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
+- | Trạng thái bắt đầu | Trạng thái đích |
+  |--------------------|---------------------|
+  | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
 - **Tập hành động**: Lên, xuống, trái phải.
   
 #### 1. bfs – Breadth-First Search
