@@ -45,7 +45,6 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
   
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động để chuyển từ trạng thái ban đầu thành trạng thái đích.
 
-
 #### 2.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
 #### **1. bfs – Breadth-First Search**
 ![BFS demo](gifs/bfs.gif)
@@ -55,6 +54,10 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 ![UCS demo](gifs/ucs.gif)
 #### **4. ids – Iterative Deepening Search**
 ![IDS demo](gifs/ids.gif)
+
+#### 2.1.3. Hình ảnh so sánh hiệu suất của các thuật toán
+
+#### 2.1.4. Một vài nhận xét về hiệu suất của các thuật toán khi áp dụng lên trò chơi 8 ô chữ
 
 ---
 
