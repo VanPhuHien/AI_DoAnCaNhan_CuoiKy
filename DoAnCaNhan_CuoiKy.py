@@ -1,6 +1,6 @@
 import pygame as pg
 import time
-from queue import Queue, LifoQueue, PriorityQueue
+from queue import deque, Queue, LifoQueue, PriorityQueue
 import heapq
 import random
 from copy import deepcopy
@@ -478,104 +478,108 @@ def BS(start_state):
 
 # Genetic Algorithm
 def GA(start_state):
-    population_size = 100  # Kích thước quần thể
-    generations = 1000    # Số thế hệ
-    mutation_rate = 0.1   # Tỷ lệ đột biến
-    tournament_size = 5   # Kích thước giải đấu chọn lọc
+    global solution_steps
+    POPULATION_SIZE = 100  
+    MAX_GENERATIONS = 1000  
+    MUTATION_RATE = 0.1  
+    TOURNAMENT_SIZE = 5  
 
-    # Hàm tạo trạng thái hợp lệ và có thể giải được
-    def generate_valid_state():
-        while True:
-            flat_list = random.sample(range(9), 9)
-            state = [
-                [flat_list[0], flat_list[1], flat_list[2]],
-                [flat_list[3], flat_list[4], flat_list[5]],
-                [flat_list[6], flat_list[7], flat_list[8]]
-            ]
+    # Hàm khởi tạo quần thể ban đầu
+    def generate_initial_population(start_state):
+        population = [deepcopy(start_state)]  
+        while len(population) < POPULATION_SIZE:
+            state = deepcopy(start_state)  
+            for _ in range(random.randint(5, 20)):
+                neighbors = get_neighbors(state)
+                state = random.choice(neighbors)  
             if is_solvable(state):
-                return state
+                population.append(state)
+        return population
 
-    # Khởi tạo quần thể
-    population = [deepcopy(start_state)]
-    for _ in range(population_size - 1):
-        population.append(generate_valid_state())
+    # Hàm fitness 
+    def fitness(state):
+        return manhattan_distance(state)
 
-    # Hàm lai ghép: Sinh trạng thái con bằng chuỗi di chuyển hợp lệ
+    # Chọn cha mẹ
+    def select_parent(population):
+        tournament = random.sample(population, TOURNAMENT_SIZE)
+        return min(tournament, key=fitness)
+
+    # Hàm lai ghép
     def crossover(parent1, parent2):
-        # Chọn ngẫu nhiên một cha mẹ làm cơ sở
-        parent = deepcopy(parent1) if random.random() < 0.5 else deepcopy(parent2)
-        num_moves = random.randint(1, 5)  # Số di chuyển ngẫu nhiên
-        
-        # Áp dụng chuỗi di chuyển hợp lệ
-        current_state = deepcopy(parent)
-        for _ in range(num_moves):
-            neighbors = get_neighbors(current_state)
-            if neighbors:
-                current_state = random.choice(neighbors)
-        
-        return current_state
-
-    # Hàm đột biến: Thực hiện một di chuyển hợp lệ
-    def mutate(state):
-        neighbors = get_neighbors(state)
+        child = deepcopy(parent1)
+        x, y = find_null(parent2)
+        neighbors = get_neighbors(parent2)
         if neighbors:
-            return random.choice(neighbors)
-        return deepcopy(state)
+            neighbor = random.choice(neighbors)
+            nx, ny = find_null(neighbor)  
+            child[nx][ny] = parent2[nx][ny]
+        return child
 
-    # Hàm kiểm tra trạng thái có hợp lệ và khác trạng thái trước
-    def is_valid_transition(prev_state, new_state):
-        neighbors = get_neighbors(prev_state)
-        return any(tuple(map(tuple, neighbor)) == tuple(map(tuple, new_state)) for neighbor in neighbors)
+    # Hàm đột biến
+    def mutate(state):
+        if random.random() < MUTATION_RATE:
+            state = deepcopy(state)
+            neighbors = get_neighbors(state)  
+            if neighbors:
+                state = random.choice(neighbors)
+        return state
 
-    best_path = [deepcopy(start_state)]  # Lưu đường đi tốt nhất, bắt đầu từ start_state
-    best_fitness = manhattan_distance(start_state)  # Fitness ban đầu
+    def is_valid_state(state):
+        flat = [num for row in state for num in row]
+        return set(flat) == set(range(9))
 
-    for generation in range(generations):
+    # Khởi tạo quần thể ban đầu
+    population = generate_initial_population(start_state)
+    solution_steps = [deepcopy(start_state)] 
+
+    for generation in range(MAX_GENERATIONS):
         # Sắp xếp quần thể theo fitness
-        population.sort(key=lambda x: manhattan_distance(x))
-        current_best = population[0]
-        current_fitness = manhattan_distance(current_best)
+        population.sort(key=fitness)
+        best_state = population[0]
+        best_fitness = fitness(best_state)
 
-        # Cập nhật đường đi nếu tìm thấy trạng thái tốt hơn
-        if current_fitness < best_fitness:
-            best_fitness = current_fitness
-            # Chỉ thêm nếu là di chuyển hợp lệ từ trạng thái trước
-            if not best_path or is_valid_transition(best_path[-1], current_best):
-                if not best_path or best_path[-1] != current_best:
-                    best_path.append(deepcopy(current_best))
+        if best_state == goal:
+            def find_path(start, end):
+                queue = deque([(start, [])]) 
+                visited = {tuple(map(tuple, start))}  
+                while queue:
+                    state, path = queue.popleft()
+                    if state == end:
+                        return path + [end]
+                    for neighbor in get_neighbors(state):
+                        state_tuple = tuple(map(tuple, neighbor))
+                        if state_tuple not in visited:
+                            visited.add(state_tuple)
+                            queue.append((neighbor, path + [neighbor]))
+                return []
 
-        # Kiểm tra nếu đạt trạng thái mục tiêu
-        if current_best == goal:
-            return best_path
+            path = find_path(start_state, best_state)
+            solution_steps.extend(path[1:])  
+            return solution_steps
 
-        # Chọn lọc giải đấu
-        new_population = []
-        for _ in range(population_size):
-            tournament = random.sample(population, tournament_size)
-            winner = min(tournament, key=lambda x: manhattan_distance(x))
-            new_population.append(deepcopy(winner))
+        # Tạo quần thể mới
+        new_population = [deepcopy(best_state)] 
+        while len(new_population) < POPULATION_SIZE:
+            parent1 = select_parent(population)  # Chọn cha mẹ 1
+            parent2 = select_parent(population)  # Chọn cha mẹ 2
+            child = crossover(parent1, parent2)  # Lai ghép tạo cá thể con
+            if is_valid_state(child) and is_solvable(child):  
+                child = mutate(child)  
+                if is_valid_state(child) and is_solvable(child):  
+                    new_population.append(child)
+            else:
+                new_population.append(deepcopy(random.choice([parent1, parent2])))
 
-        # Lai ghép và đột biến
-        next_generation = []
-        for i in range(0, population_size, 2):
-            parent1 = new_population[i]
-            parent2 = new_population[min(i + 1, population_size - 1)]
-            
-            # Sinh hai trạng thái con
-            child1 = crossover(parent1, parent2)
-            child2 = crossover(parent2, parent1)
-            
-            # Áp dụng đột biến
-            if random.random() < mutation_rate:
-                child1 = mutate(child1)
-            if random.random() < mutation_rate:
-                child2 = mutate(child2)
-            
-            next_generation.extend([child1, child2])
+        population = new_population  # Cập nhật quần thể
 
-        population = next_generation[:population_size]
+        # Thêm cá thể tốt nhất
+        if fitness(best_state) < fitness(solution_steps[-1]):
+            last_state = solution_steps[-1]
+            if best_state in get_neighbors(last_state):
+                solution_steps.append(deepcopy(best_state))
 
-    return best_path if best_path else []
+    return [] 
 
 
 
