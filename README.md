@@ -4,6 +4,7 @@
 - Giảng viên hướng dẫn: **TS. Phan Thị Huyền Trang**
 
 
+
 ## Mục lục
 - [1. Giới thiệu chung](#1-giới-thiệu-chung)  
 - [2. Mục tiêu](#2-mục-tiêu)  
@@ -58,6 +59,7 @@
     - [3.6.3. Hình ảnh so sánh hiệu suất của các thuật toán](#363-hình-ảnh-so-sánh-hiệu-suất-của-các-thuật-toán)
     - [3.6.4. Nhận xét](#364-nhận-xét)
 
+
   
 ## 1. Giới thiệu chung
 - Đồ án xây dựng game giải bài toán **8-puzzle** có áp dụng các thuật toán tìm kiếm để tìm lời giải, chương trình được thiết kế với giao diện đơn giản, trực quan để người dùng dễ dàng tương tác và lựa chọn thuật toán phù hợp.
@@ -70,11 +72,11 @@ Trong giao diện trên gồm:
 - **Nút màu xanh lá**: Biểu đồ hiệu suất hoạt động của thuật toán dựa trên thời gian thực thi.
 - **Nút màu đỏ**: **Reset** dùng để đặt lại trạng thái đầu, **Stop** dùng để ngưng việc giải nếu cần.
 
+
 ## 2. Mục tiêu
-
 Đồ án tập trung vào xây dựng chương trình giải bài toán **8-puzzle** nhằm mục tiêu tìm hiểu, triển khai và đánh giá hiệu suất của các thuật toán tìm kiếm khi áp dụng vào bài toán — yêu cầu sắp xếp lại các ô số từ trạng thái bắt đầu (Start State) sao cho đúng với trạng thái đích (Goal State) thông qua các hành động di chuyển hợp lệ.
-
 Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**
+
 
 ## 3. Nội dung
 
