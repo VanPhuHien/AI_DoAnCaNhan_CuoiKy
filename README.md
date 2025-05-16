@@ -53,7 +53,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động để chuyển từ trạng thái ban đầu thành trạng thái đích.
 
 #### 3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-  #### BFS – Breadth-First Search
+- #### BFS – Breadth-First Search
   ![BFS demo](gifs/bfs.gif)
 - #### DFS – Depth-First Search
   ![DFS demo](gifs/dfs.gif)
