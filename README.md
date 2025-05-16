@@ -1,14 +1,26 @@
 # Đồ án cá nhân cuối kỳ - AI
-
-## 1. Mục tiêu
-
-Đồ án tập trung vào xây dựng chương trình giải bài toán **8-puzzle** nhằm mục tiêu tìm hiểu, triển khai và đánh giá hiệu suất của các thuật toán tìm kiếm khi áp dụng vào bài toán — yêu cầu sắp xếp lại các ô số từ trạng thái ban đầu (Start State) sao cho đúng với trạng thái đích (Goal State) thông qua các hành động di chuyển hợp lệ.
-
-Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**
-
+> Mã môn học:
+> Mã lớp học: Tri tue nhan tao_ Nhom 04
 > Sinh viên thực hiện [Văn Phú Hiền - 23110213](#)
 > 
 > Giảng viên hướng dẫn: **TS. Phan Thị Huyền Trang**
+
+## 1. Giới thiệu chung
+Đồ án xây dựng game giải bài toán **8-puzzle** có áp dụng các thuật toán tìm kiếm để tìm lời giải, chương trình được thiết kế với giao diện đơn giản, trực quan để người dùng dễ dàng tương tác và lựa chọn thuật toán phù hợp.
+Giao diện chính của chương trình:
+![Giao diện chương trình](assets/giaodien.png)
+Trong giao diện trên gồm:
+- **Start State**: Trạng thái bắt đầu.
+- **Goal State**: Trạng thái đích.
+- **Nút màu xanh dương**: Các thuật toán tìm kiếm.
+- **Nút màu xanh lá**: Biểu đồ hiệu suất hoạt động của thuật toán dựa trên thời gian thực thi.
+- **Nút màu đỏ**: **Reset** dùng để đặt lại trạng thái đầu, **Stop** dùng để ngưng việc giải nếu cần.
+
+## 1. Mục tiêu
+
+Đồ án tập trung vào xây dựng chương trình giải bài toán **8-puzzle** nhằm mục tiêu tìm hiểu, triển khai và đánh giá hiệu suất của các thuật toán tìm kiếm khi áp dụng vào bài toán — yêu cầu sắp xếp lại các ô số từ trạng thái bắt đầu (Start State) sao cho đúng với trạng thái đích (Goal State) thông qua các hành động di chuyển hợp lệ.
+
+Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**
 
 ## Mục lục - Các nhóm thuật toán
 
