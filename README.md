@@ -9,7 +9,11 @@
 - [3. Nội dung](#3-nội-dung)
   - [3.1. Uninformed Search Algorithms (Các thuật toán tìm kiếm không có thông tin)](#31-uninformed-search-algorithms-các-thuật-toán-tìm-kiếm-không-có-thông-tin)
     - [3.1.1. Các thành phần chính của bài toán tìm kiếm và Solution](#311-các-thành-phần-chính-của-bài-toán-tìm-kiếm-và-solution)
-    - [3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi](#312-hình-ảnh-gif-của-từng-thuật-toán-khi-áp-dụng-lên-trò-chơi)   
+    - [3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi](#312-hình-ảnh-gif-của-từng-thuật-toán-khi-áp-dụng-lên-trò-chơi)
+      - [bfs – Breadth-First Search](#bfs-breadth-first-search)
+      - [dfs – Depth-First Search](#dfs--depth-first-search)
+      - [ucs – Uniform Cost Search](#ucs--uniform-cost-search)
+      - [ids – Iterative Deepening Search](#ids--iterative-deepening-search)
     - [3.1.3. Hình ảnh so sánh hiệu suất của các thuật toán](#313-hình-ảnh-so-sánh-hiệu-suất-của-các-thuật-toán)
     - [3.1.4. Một vài nhận xét về hiệu suất của các thuật toán khi áp dụng lên trò chơi 8 ô chữ](#314-một-vài-nhận-xét-về-hiệu-suất-của-các-thuật-toán-khi-áp-dụng-lên-trò-chơi-8-ô-chữ)
 
@@ -49,14 +53,14 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động để chuyển từ trạng thái ban đầu thành trạng thái đích.
 
 #### 3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-#### **1. bfs – Breadth-First Search**
-![BFS demo](gifs/bfs.gif)
-#### **2. dfs – Depth-First Search**
-![DFS demo](gifs/dfs.gif)
-#### **3. ucs – Uniform Cost Search**
-![UCS demo](gifs/ucs.gif)
-#### **4. ids – Iterative Deepening Search**
-![IDS demo](gifs/ids.gif)
+- #### **bfs – Breadth-First Search**
+  ![BFS demo](gifs/bfs.gif)
+- #### **dfs – Depth-First Search**
+  ![DFS demo](gifs/dfs.gif)
+- #### **ucs – Uniform Cost Search**
+  ![UCS demo](gifs/ucs.gif)
+- #### **ids – Iterative Deepening Search**
+  ![IDS demo](gifs/ids.gif)
 
 #### 3.1.3. Hình ảnh so sánh hiệu suất của các thuật toán
 
