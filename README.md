@@ -7,11 +7,11 @@
 - [1. Giới thiệu chung](#1-giới-thiệu-chung)  
 - [2. Mục tiêu](#2-mục-tiêu)  
 - [3. Nội dung](#3-nội-dung)
-  - [3.1. Uninformed Search Algorithms (Các thuật toán tìm kiếm không có thông tin)](#3.1-uninformed-search-algorithms-các-thuật-toán-tìm-kiếm-không-có-thông-tin)
-    - [3.1.1. Các thành phần chính của bài toán tìm kiếm và Solution](#3.1.1-các-thành-phần-chính-của-bài-toán-tìm-kiếm-và-solution)
-    - [3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi](#3.1.2-hình-ảnh-gif-của-từng-thuật-toán-khi-áp-dụng-lên-trò-chơi)   
-    - [3.1.3. Hình ảnh so sánh hiệu suất của các thuật toán](#3.1.3-hình-ảnh-so-sánh-hiệu-suất-của-các-thuật-toán)
-    - [3.1.4. Một vài nhận xét về hiệu suất của các thuật toán khi áp dụng lên trò chơi 8 ô chữ](#3.1.4-một-vài-nhận-xét-về-hiệu-suất-của-các-thuật-toán-khi-áp-dụng-lên-trò-chơi-8-ô-chữ)
+  - [3.1. Uninformed Search Algorithms (Các thuật toán tìm kiếm không có thông tin)](#31-uninformed-search-algorithms-các-thuật-toán-tìm-kiếm-không-có-thông-tin)
+    - [3.1.1. Các thành phần chính của bài toán tìm kiếm và Solution](#311-các-thành-phần-chính-của-bài-toán-tìm-kiếm-và-solution)
+    - [3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi](#312-hình-ảnh-gif-của-từng-thuật-toán-khi-áp-dụng-lên-trò-chơi)   
+    - [3.1.3. Hình ảnh so sánh hiệu suất của các thuật toán](#313-hình-ảnh-so-sánh-hiệu-suất-của-các-thuật-toán)
+    - [3.1.4. Một vài nhận xét về hiệu suất của các thuật toán khi áp dụng lên trò chơi 8 ô chữ](#314-một-vài-nhận-xét-về-hiệu-suất-của-các-thuật-toán-khi-áp-dụng-lên-trò-chơi-8-ô-chữ)
 
   
 ## 1. Giới thiệu chung
