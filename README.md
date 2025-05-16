@@ -1,8 +1,8 @@
 # Đồ án cá nhân cuối kỳ - AI
-Mã môn học:
-Mã lớp học: Tri tue nhan tao_ Nhom 04
-Sinh viên thực hiện [Văn Phú Hiền - 23110213](#) 
-Giảng viên hướng dẫn: **TS. Phan Thị Huyền Trang**
+- Mã môn học:
+- Mã lớp học: Tri tue nhan tao_ Nhom 04
+- Sinh viên thực hiện [Văn Phú Hiền - 23110213](#) 
+- Giảng viên hướng dẫn: **TS. Phan Thị Huyền Trang**
 
 ## 1. Giới thiệu chung
 Đồ án xây dựng game giải bài toán **8-puzzle** có áp dụng các thuật toán tìm kiếm để tìm lời giải, chương trình được thiết kế với giao diện đơn giản, trực quan để người dùng dễ dàng tương tác và lựa chọn thuật toán phù hợp.
