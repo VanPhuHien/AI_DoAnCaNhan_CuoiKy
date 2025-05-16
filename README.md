@@ -82,16 +82,12 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 ### 3.1. Uninformed Search Algorithms (Các thuật toán tìm kiếm không có thông tin)
 #### 3.1.1. Các thành phần chính của bài toán tìm kiếm và Solution
 - **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống.
-  
 - | Trạng thái bắt đầu | Trạng thái đích |
   |--------------------|---------------------|
   | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
-  
 - **Tập hành động**: Lên, xuống, trái phải.
-  
 - **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
-  
-- **Solution**: Một chuỗi các trạng thái được áp dụng các hành động để chuyển từ trạng thái ban đầu thành trạng thái đích.
+- **Solution**: Một chuỗi các trạng thái được áp dụng các hành động để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
 - #### BFS – Breadth First Search
@@ -105,14 +101,23 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 #### 3.1.3. Hình ảnh so sánh hiệu suất của các thuật toán
 
-#### 3.1.4. Một vài nhận xét về hiệu suất của các thuật toán khi áp dụng lên trò chơi 8 ô chữ
+#### 3.1.4. Nhận xét
 
 ---
 
 ### 3.2. Informed Search Algorithms (Các thuật toán tìm kiếm có thông tin)
-
 #### 3.2.1. Các thành phần chính của bài toán tìm kiếm và Solution
-
+- **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống.
+- | Trạng thái bắt đầu | Trạng thái đích |
+  |--------------------|---------------------|
+  | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
+- **Tập hành động**: Lên, xuống, trái phải.
+- **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
+- **Hàm tính toán chi phí**: f(n) = h(n) + g(n). Trong đó:
+  - h(n): hàm Heuristic dùng để tính toán chi phí tối ưu dựa trên cách tính khoảng cách Manhattan.
+  - g(n): số bước di chuyển các ô từ trạng thái bắt đầu đến trạng thái hiện tại.
+  - f(n): tổng chi phí ước lượng từ trạng thái bắt đầu qua trạng thái hiện tại đến trạng thái đích.
+- **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên hàm tính toán chi phí để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.2.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
 - #### Greedy – Greedy Best First Search
@@ -122,12 +127,22 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - #### IDA Star – Iterative Deepening A Star
   ![IDA* demo](gifs/ida_star.gif)
 
+#### 3.2.3. Hình ảnh so sánh hiệu suất của các thuật toán
+
+#### 3.2.4. Nhận xét
+
 ---
 
 ### 3.3. Local Search Algorithms (Các thuật toán tìm kiếm cục bộ)
-
 #### 3.3.1. Các thành phần chính của bài toán tìm kiếm và Solution
-
+- **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống.
+- | Trạng thái bắt đầu | Trạng thái đích |
+  |--------------------|---------------------|
+  | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
+- **Tập hành động**: Lên, xuống, trái phải.
+- **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
+- **Hàm tính toán chi phí**: chủ yếu tính toán dựa trên khoảng cách Manhattan.
+- **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên hàm tính toán chi phí để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.3.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
 #### **1. SHC – Simple Hill Climbing**
@@ -136,8 +151,14 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 ![SAHC demo](gifs/SAHC.gif)
 #### **3. Stochastic – Stochastic Hill Climbing**
 ![Stochastic demo](gifs/Stochastic.gif)
-#### **4. SA – Simulated Annealing**
-![Simulated Annealing demo](gifs/SA.gif)
 #### **5. BS – Beam Search**
 ![Beam Search demo](gifs/BS.gif)
+#### **4. SA – Simulated Annealing**
+![Simulated Annealing demo](gifs/SA.gif)
+
+#### 3.2.3. Hình ảnh so sánh hiệu suất của các thuật toán
+
+#### 3.2.4. Nhận xét
+
+---
 
