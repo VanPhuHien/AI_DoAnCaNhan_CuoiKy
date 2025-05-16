@@ -79,9 +79,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 
 ## 3. Nội dung
-
 ### 3.1. Uninformed Search Algorithms (Các thuật toán tìm kiếm không có thông tin)
-
 #### 3.1.1. Các thành phần chính của bài toán tìm kiếm và Solution
 - **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống.
   
