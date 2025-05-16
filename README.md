@@ -7,7 +7,8 @@
 Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**
 
 > Sinh viên thực hiện [Văn Phú Hiền - 23110213](#)
-> Giảng viên hướng dẫn: TS. Phan Thị Huyền Trang
+> 
+> Giảng viên hướng dẫn: **TS. Phan Thị Huyền Trang**
 
 ## Mục lục - Các nhóm thuật toán
 
