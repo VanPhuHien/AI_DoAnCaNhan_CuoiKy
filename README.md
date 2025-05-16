@@ -3,6 +3,7 @@
 - Sinh viên thực hiện [Văn Phú Hiền - 23110213](#) 
 - Giảng viên hướng dẫn: **TS. Phan Thị Huyền Trang**
 
+
 ## Mục lục
 - [1. Giới thiệu chung](#1-giới-thiệu-chung)  
 - [2. Mục tiêu](#2-mục-tiêu)  
@@ -15,7 +16,17 @@
       - [UCS – Uniform Cost Search](#ucs--uniform-cost-search)
       - [IDS – Iterative Deepening Search](#ids--iterative-deepening-search)
     - [3.1.3. Hình ảnh so sánh hiệu suất của các thuật toán](#313-hình-ảnh-so-sánh-hiệu-suất-của-các-thuật-toán)
-    - [3.1.4. Một vài nhận xét về hiệu suất của các thuật toán khi áp dụng lên trò chơi 8 ô chữ](#314-một-vài-nhận-xét-về-hiệu-suất-của-các-thuật-toán-khi-áp-dụng-lên-trò-chơi-8-ô-chữ)
+    - [3.1.4. Nhận xét](#314-nhận-xét)
+  - [3.2. Informed Search Algorithms (Các thuật toán tìm kiếm có thông tin)](#32-informed-search-algorithms-các-thuật-toán-tìm-kiếm-có-thông-tin)
+    - [3.2.1. Các thành phần chính của bài toán tìm kiếm và Solution](#321-các-thành-phần-chính-của-bài-toán-tìm-kiếm-và-solution)
+    - [3.2.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi](#322-hình-ảnh-gif-của-từng-thuật-toán-khi-áp-dụng-lên-trò-chơi)
+    - [3.2.3. Hình ảnh so sánh hiệu suất của các thuật toán](#323-hình-ảnh-so-sánh-hiệu-suất-của-các-thuật-toán)
+    - [3.2.4. Nhận xét](#324-nhận-xét)
+  - [3.3. Local Search Algorithms (Các thuật toán tìm kiếm cục bộ)](#33-local-search-algorithms-các-thuật-toán-tìm-kiếm-cục-bộ)
+    - [3.3.1. Các thành phần chính của bài toán tìm kiếm và Solution](#331-các-thành-phần-chính-của-bài-toán-tìm-kiếm-và-solution)
+    - [3.3.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi](#332-hình-ảnh-gif-của-từng-thuật-toán-khi-áp-dụng-lên-trò-chơi)
+    - [3.3.3. Hình ảnh so sánh hiệu suất của các thuật toán](#333-hình-ảnh-so-sánh-hiệu-suất-của-các-thuật-toán)
+    - [3.3.4. Nhận xét](#334-nhận-xét)
 
   
 ## 1. Giới thiệu chung
