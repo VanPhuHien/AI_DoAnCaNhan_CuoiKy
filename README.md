@@ -11,9 +11,9 @@
     - [3.1.1. Các thành phần chính của bài toán tìm kiếm và Solution](#311-các-thành-phần-chính-của-bài-toán-tìm-kiếm-và-solution)
     - [3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi](#312-hình-ảnh-gif-của-từng-thuật-toán-khi-áp-dụng-lên-trò-chơi)
       - [BFS – Breadth First Search](#bfs--breadth-first-search)
-      - [DFS – Depth First Search](#dfs)
-      - [UCS – Uniform Cost Search](#ucs)
-      - [IDS – Iterative Deepening Search](#ids)
+      - [DFS – Depth First Search](#dfs--depth-first-search)
+      - [UCS – Uniform Cost Search](#ucs--uniform-cost-search)
+      - [IDS – Iterative Deepening Search](#ids--iterative-deepening-search)
     - [3.1.3. Hình ảnh so sánh hiệu suất của các thuật toán](#313-hình-ảnh-so-sánh-hiệu-suất-của-các-thuật-toán)
     - [3.1.4. Một vài nhận xét về hiệu suất của các thuật toán khi áp dụng lên trò chơi 8 ô chữ](#314-một-vài-nhận-xét-về-hiệu-suất-của-các-thuật-toán-khi-áp-dụng-lên-trò-chơi-8-ô-chữ)
 
@@ -53,9 +53,9 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động để chuyển từ trạng thái ban đầu thành trạng thái đích.
 
 #### 3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-- #### BFS – Breadth-First Search
+- #### BFS – Breadth First Search
   ![BFS demo](gifs/bfs.gif)
-- #### DFS – Depth-First Search
+- #### DFS – Depth First Search
   ![DFS demo](gifs/dfs.gif)
 - #### UCS – Uniform Cost Search 
   ![UCS demo](gifs/ucs.gif)
