@@ -103,12 +103,12 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 
 #### 3.2.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-#### 1. a_star – A* Search
-![A* demo](gifs/a_star.gif)
-#### 2. **greedy – Greedy Best-First Search**
-![Greedy demo](gifs/greedy.gif)
-#### 3. **ida_star – Iterative Deepening A***
-![IDA* demo](gifs/ida_star.gif)
+- #### Greedy – Greedy Best First Search
+  ![Greedy demo](gifs/greedy.gif)
+- #### A* – A* Search
+  ![A* demo](gifs/a_star.gif)
+- #### IDA* – Iterative Deepening A*
+  ![IDA* demo](gifs/ida_star.gif)
 
 ---
 
