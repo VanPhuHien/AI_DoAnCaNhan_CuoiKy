@@ -54,7 +54,7 @@
   - [3.6. Reinforcement Learning (Học tăng cường)](#36-reinforcement-learning-học-tăng-cường)
     - [3.6.1. Các thành phần chính của bài toán tìm kiếm và Solution](#361-các-thành-phần-chính-của-bài-toán-tìm-kiếm-và-solution)
     - [3.6.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi](#362-hình-ảnh-gif-của-từng-thuật-toán-khi-áp-dụng-lên-trò-chơi)
-      [Q - Learning](#q--learning)
+      - [Q - Learning](#q--learning)
     - [3.6.3. Hình ảnh so sánh hiệu suất của các thuật toán](#363-hình-ảnh-so-sánh-hiệu-suất-của-các-thuật-toán)
     - [3.6.4. Nhận xét](#364-nhận-xét)
 
