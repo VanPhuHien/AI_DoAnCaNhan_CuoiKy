@@ -54,11 +54,11 @@
     - [3.5.4. Nhận xét](#354-nhận-xét)
   - [3.6. Reinforcement Learning (Học tăng cường)](#36-reinforcement-learning-học-tăng-cường)
     - [3.6.1. Các thành phần chính của bài toán tìm kiếm và Solution](#361-các-thành-phần-chính-của-bài-toán-tìm-kiếm-và-solution)
-    - [3.6.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi](#362-hình-ảnh-gif-của-từng-thuật-toán-khi-áp-dụng-lên-trò-chơi)
+    - [3.6.2. Hình ảnh gif của thuật toán khi áp dụng lên trò chơi](#362-hình-ảnh-gif-của-thuật-toán-khi-áp-dụng-lên-trò-chơi)
       - [Q - Learning](#q--learning)
-    - [3.6.3. Hình ảnh so sánh hiệu suất của các thuật toán](#363-hình-ảnh-so-sánh-hiệu-suất-của-các-thuật-toán)
+    - [3.6.3. Hình ảnh hiệu suất của thuật toán](#363-hình-ảnh-hiệu-suất-của-thuật-toán)
     - [3.6.4. Nhận xét](#364-nhận-xét)
-
+- [4. Kết luận](#4-kết-luận)
 
   
 ## 1. Giới thiệu chung
@@ -75,7 +75,7 @@ Trong giao diện trên gồm:
 
 ## 2. Mục tiêu
 Đồ án tập trung vào xây dựng chương trình giải bài toán **8-puzzle** nhằm mục tiêu tìm hiểu, triển khai và đánh giá hiệu suất của các thuật toán tìm kiếm khi áp dụng vào bài toán — yêu cầu sắp xếp lại các ô số từ trạng thái bắt đầu (Start State) sao cho đúng với trạng thái đích (Goal State) thông qua các hành động di chuyển hợp lệ.
-Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**
+Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**.
 
 
 ## 3. Nội dung
@@ -85,21 +85,22 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - | Trạng thái bắt đầu | Trạng thái đích |
   |--------------------|---------------------|
   | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
-- **Tập hành động**: Lên, xuống, trái phải.
+- **Tập hành động**: Lên, xuống, trái, phải.
 - **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
 - #### BFS – Breadth First Search
-  ![BFS demo](gifs/bfs.gif)
+  ![BFS demo](gifs/BFS.gif)
 - #### DFS – Depth First Search
-  ![DFS demo](gifs/dfs.gif)
+  ![DFS demo](gifs/DFS.gif)
 - #### UCS – Uniform Cost Search 
-  ![UCS demo](gifs/ucs.gif)
+  ![UCS demo](gifs/UCS.gif)
 - #### IDS – Iterative Deepening Search 
-  ![IDS demo](gifs/ids.gif)
+  ![IDS demo](gifs/IDS.gif)
 
 #### 3.1.3. Hình ảnh so sánh hiệu suất của các thuật toán
+![Uninformed](assets/Uninformed.png)
 
 #### 3.1.4. Nhận xét
 
@@ -111,7 +112,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - | Trạng thái bắt đầu | Trạng thái đích |
   |--------------------|---------------------|
   | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
-- **Tập hành động**: Lên, xuống, trái phải.
+- **Tập hành động**: Lên, xuống, trái, phải.
 - **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
 - **Hàm tính toán chi phí**: f(n) = h(n) + g(n). Trong đó:
   - h(n): hàm Heuristic dùng để tính toán chi phí tối ưu dựa trên cách tính khoảng cách Manhattan.
@@ -121,13 +122,14 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 
 #### 3.2.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
 - #### Greedy – Greedy Best First Search
-  ![Greedy demo](gifs/greedy.gif)
+  ![Greedy demo](gifs/Greedy.gif)
 - #### A Star – A Star Search
-  ![A* demo](gifs/a_star.gif)
+  ![A* demo](gifs/A_Star.gif)
 - #### IDA Star – Iterative Deepening A Star
-  ![IDA* demo](gifs/ida_star.gif)
+  ![IDA* demo](gifs/IDA_Star.gif)
 
 #### 3.2.3. Hình ảnh so sánh hiệu suất của các thuật toán
+![Informed](assets/Informed.png)
 
 #### 3.2.4. Nhận xét
 
@@ -139,7 +141,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - | Trạng thái bắt đầu | Trạng thái đích |
   |--------------------|---------------------|
   | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
-- **Tập hành động**: Lên, xuống, trái phải.
+- **Tập hành động**: Lên, xuống, trái, phải.
 - **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
 - **Hàm tính toán chi phí**: chủ yếu tính toán dựa trên khoảng cách Manhattan để chọn trạng thái lân cận tốt nhất.
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên hàm tính toán chi phí để chuyển từ trạng thái bắt đầu sang trạng thái đích.
@@ -159,6 +161,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
   ![GA demo](gifs/GA.gif)
 
 #### 3.3.3. Hình ảnh so sánh hiệu suất của các thuật toán
+![Local](assets/Local.png)
 
 #### 3.3.4. Nhận xét
 
@@ -178,8 +181,8 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Đối với trong môi trường chỉ nhìn thấy một phần**:
 - | Trạng thái bắt đầu | Trạng thái đích |
   |--------------------|---------------------|
-  | Ngẫu nhiên | ![Goal](assets/goal_state.png) |
-- **Tập hành động**: Lên, xuống, trái phải.
+  | Ngẫu nhiên | ![Goal](assets/goal_state_partial.png) |
+- **Tập hành động**: Lên, xuống, trái, phải.
 - **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên không gian niềm tin để chuyển từ trạng thái đầu ngẫu nhiên sang trạng thái đích trong môi trường không xác định.
 
@@ -192,6 +195,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
   ![POS demo](gifs/POS.gif)
 
 #### 3.4.3. Hình ảnh so sánh hiệu suất của các thuật toán
+![Nondeterminism](assets/Nondeterminism.png)
 
 #### 3.4.4. Nhận xét
 
@@ -203,10 +207,10 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - | Trạng thái bắt đầu | Trạng thái đích |
   |--------------------|---------------------|
   | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
-- **Tập hành động**: Lên, xuống, trái phải.
+- **Tập hành động**: Lên, xuống, trái, phải.
 - **Biến**: Các ô trên ma trận 3x3.
 - **Miền giá trị**: Các số từ 0 đến 8.
-- **Ràng buộc**: Mỗi số chỉ xuất hiện một lần và các bước di chuyển phải hợp lệ
+- **Ràng buộc**: Mỗi số chỉ xuất hiện một lần và các bước di chuyển phải hợp lệ.
 - **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
 - **Solution**: Một trạng thái phải thỏa mãn tất cả các ràng buộc.
   
@@ -217,6 +221,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
   ![AC3 demo](gifs/AC3.gif)
 
 #### 3.5.3. Hình ảnh so sánh hiệu suất của các thuật toán
+![Constraint](assets/Constraint.png)
 
 #### 3.5.4. Nhận xét
 
@@ -228,16 +233,21 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - | Trạng thái bắt đầu | Trạng thái đích |
   |--------------------|---------------------|
   | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
-- **Tập hành động**: Lên, xuống, trái phải.
+- **Tập hành động**: Lên, xuống, trái, phải.
 - **Agent**: Học cách di chuyển dựa trên giá trị Q-value được lưu trữ trong bảng Q-table.
 - **Q-table** là một bảng lưu trữ các cặp trạng thái và hành động. Trong đó, **Q-value** là số thực biểu thị mức độ hữu ích của hành động trong trạng thái đó, giúp cho **Agent** chọn được đường đi tốt nhất.
 - **Hàm thưởng**: +0 nếu đạt được mục tiêu, -1 cho mỗi bước di chuyển không hiệu quả.
 - **Solution**: Một chính sách tối ưu để đạt được trạng thái đích.
   
-#### 3.6.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
+#### 3.6.2. Hình ảnh gif của thuật toán khi áp dụng lên trò chơi
 - #### Q – Learning
   ![QL demo](gifs/QL.gif)
 
-#### 3.6.3. Hình ảnh hiệu suất thuật toán
+#### 3.6.3. Hình ảnh hiệu suất của thuật toán
+![Reinforcement Learning](assets/RL.png)
 
 #### 3.6.4. Nhận xét
+
+
+## 4. Kết luận
+
