@@ -763,8 +763,7 @@ def NOS():
             
             # Xây dựng result_path
             result_path = [initial_state_list] + path_to_goal
-            if not path_to_goal:  # Nếu không tìm thấy đường đi
-                print("Không thể tìm đường đi từ initial_selected_state đến matched_state")
+            if not path_to_goal: 
                 return []
             
             return result_path
@@ -777,7 +776,7 @@ def NOS():
                 new_path = path + [(action_name, new_belief_state)]
                 queue.put((new_belief_state, new_path, next_state))
     
-    return []  # Không tìm thấy lời giải
+    return []
 
 
 # Hàm tạo trạng thái ngẫu nhiên với 3 ô đầu cố định là [1, 2, 3]
@@ -886,8 +885,7 @@ def POS():
             
             # Xây dựng result_path
             result_path = [initial_state_list] + path_to_goal
-            if not path_to_goal:  # Nếu không tìm thấy đường đi
-                print("Không thể tìm đường đi từ initial_selected_state đến matched_state")
+            if not path_to_goal:  
                 return []
             
             return result_path
@@ -900,7 +898,7 @@ def POS():
                 new_path = path + [(action_name, new_belief_state)]
                 queue.put((new_belief_state, new_path, next_state))
     
-    return []  # Không tìm thấy lời giải
+    return []
 
 
 
