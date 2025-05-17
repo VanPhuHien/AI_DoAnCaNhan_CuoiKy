@@ -90,13 +90,13 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-- #### BFS - Breadth First Search
+- #### BFS – Breadth First Search
   ![BFS demo](gifs/bfs.gif)
 - #### DFS - Depth First Search
   ![DFS demo](gifs/dfs.gif)
 - #### UCS - Uniform Cost Search 
   ![UCS demo](gifs/ucs.gif)
-- #### IDS - Iterative Deepening Search 
+- #### IDS – Iterative Deepening Search 
   ![IDS demo](gifs/ids.gif)
 
 #### 3.1.3. Hình ảnh so sánh hiệu suất của các thuật toán
