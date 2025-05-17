@@ -141,7 +141,7 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
   | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
 - **Tập hành động**: Lên, xuống, trái phải.
 - **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
-- **Hàm tính toán chi phí**: chủ yếu tính toán dựa trên khoảng cách Manhattan.
+- **Hàm tính toán chi phí**: chủ yếu tính toán dựa trên khoảng cách Manhattan để chọn trạng thái lân cận tốt nhất.
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên hàm tính toán chi phí để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.3.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
@@ -196,3 +196,49 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 #### 3.4.4. Nhận xét
 
 ---
+
+### 3.5. Searching with Constraint Satisfaction (Tìm kiếm có ràng buộc)
+#### 3.5.1. Các thành phần chính của bài toán tìm kiếm và Solution
+- **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống.
+- | Trạng thái bắt đầu | Trạng thái đích |
+  |--------------------|---------------------|
+  | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
+- **Tập hành động**: Lên, xuống, trái phải.
+- **Biến**: Các ô trên ma trận 3x3.
+- **Miền giá trị**: Các số từ 0 đến 8.
+- **Ràng buộc**: Mỗi số chỉ xuất hiện một lần và các bước di chuyển phải hợp lệ
+- **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
+- **Solution**: Một trạng thái phải thỏa mãn tất cả các ràng buộc.
+  
+#### 3.5.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
+- #### BT – Backtracking
+  ![BT demo](gifs/BT.gif)
+- #### AC – 3
+  ![AC3 demo](gifs/AC3.gif)
+
+#### 3.5.3. Hình ảnh so sánh hiệu suất của các thuật toán
+
+#### 3.5.4. Nhận xét
+
+---
+
+### 3.6. Reinforcement Learning (Học tăng cường)
+#### 3.6.1. Các thành phần chính của bài toán tìm kiếm và Solution
+- **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống.
+- | Trạng thái bắt đầu | Trạng thái đích |
+  |--------------------|---------------------|
+  | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
+- **Tập hành động**: Lên, xuống, trái phải.
+- **Biến**: Các ô trên ma trận 3x3.
+- **Miền giá trị**: Các số từ 0 đến 8.
+- **Ràng buộc**: Mỗi số chỉ xuất hiện một lần và các bước di chuyển phải hợp lệ.
+- **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
+- **Solution**: Một trạng thái phải thỏa mãn tất cả các ràng buộc.
+  
+#### 3.6.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
+- #### BT – Backtracking
+  ![BT demo](gifs/BT.gif)
+
+#### 3.6.3. Hình ảnh so sánh hiệu suất của các thuật toán
+
+#### 3.6.4. Nhận xét
