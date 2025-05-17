@@ -229,16 +229,15 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
   |--------------------|---------------------|
   | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
 - **Tập hành động**: Lên, xuống, trái phải.
-- **Biến**: Các ô trên ma trận 3x3.
-- **Miền giá trị**: Các số từ 0 đến 8.
-- **Ràng buộc**: Mỗi số chỉ xuất hiện một lần và các bước di chuyển phải hợp lệ.
-- **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
-- **Solution**: Một trạng thái phải thỏa mãn tất cả các ràng buộc.
+- **Agent**: Học cách di chuyển dựa trên giá trị Q-value được lưu trữ trong bảng Q-table.
+- **Q-table** là một bảng lưu trữ các cặp trạng thái và hành động. Trong đó, **Q-value** là số thực biểu thị mức độ hữu ích của hành động trong trạng thái đó, giúp cho **Agent** chọn được đường đi tốt nhất.
+- **Hàm thưởng**: +0 nếu đạt được mục tiêu, -1 cho mỗi bước di chuyển không hiệu quả.
+- **Solution**: Một chính sách tối ưu để đạt được trạng thái đích.
   
 #### 3.6.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-- #### BT – Backtracking
-  ![BT demo](gifs/BT.gif)
+- #### Q – Learning
+  ![QL demo](gifs/QL.gif)
 
-#### 3.6.3. Hình ảnh so sánh hiệu suất của các thuật toán
+#### 3.6.3. Hình ảnh hiệu suất thuật toán
 
 #### 3.6.4. Nhận xét
