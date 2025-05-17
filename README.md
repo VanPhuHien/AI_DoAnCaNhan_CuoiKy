@@ -92,9 +92,9 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 #### 3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
 - #### BFS – Breadth First Search
   ![BFS demo](gifs/bfs.gif)
-- #### DFS - Depth First Search
+- #### DFS – Depth First Search
   ![DFS demo](gifs/dfs.gif)
-- #### UCS - Uniform Cost Search 
+- #### UCS – Uniform Cost Search 
   ![UCS demo](gifs/ucs.gif)
 - #### IDS – Iterative Deepening Search 
   ![IDS demo](gifs/ids.gif)
@@ -120,11 +120,11 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên hàm tính toán chi phí để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.2.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-- #### Greedy - Greedy Best First Search
+- #### Greedy – Greedy Best First Search
   ![Greedy demo](gifs/greedy.gif)
-- #### A Star - A Star Search
+- #### A Star – A Star Search
   ![A* demo](gifs/a_star.gif)
-- #### IDA Star - Iterative Deepening A Star
+- #### IDA Star – Iterative Deepening A Star
   ![IDA* demo](gifs/ida_star.gif)
 
 #### 3.2.3. Hình ảnh so sánh hiệu suất của các thuật toán
@@ -145,17 +145,17 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên hàm tính toán chi phí để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.3.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-- #### SHC - Simple Hill Climbing
+- #### SHC – Simple Hill Climbing
   ![SHC demo](gifs/SHC.gif)
-- #### SAHC - Steepest Ascent Hill Climbing
+- #### SAHC – Steepest Ascent Hill Climbing
   ![SAHC demo](gifs/SAHC.gif)
-- #### Stochastic - Stochastic Hill Climbing
+- #### Stochastic – Stochastic Hill Climbing
   ![Stochastic demo](gifs/Stochastic.gif)
-- #### BS - Beam Search
+- #### BS – Beam Search
   ![BS demo](gifs/BS.gif)
-- #### SA - Simulated Annealing
+- #### SA – Simulated Annealing
   ![SA demo](gifs/SA.gif)
-- #### GA - Genetic Algorithm
+- #### GA – Genetic Algorithm
   ![GA demo](gifs/GA.gif)
 
 #### 3.3.3. Hình ảnh so sánh hiệu suất của các thuật toán
@@ -184,11 +184,11 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên không gian niềm tin để chuyển từ trạng thái đầu ngẫu nhiên sang trạng thái đích trong môi trường không xác định.
 
 #### 3.4.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-- #### AOGS - AND-OR Graph Search
+- #### AOGS – AND-OR Graph Search
   ![AOGS demo](gifs/AOGS.gif)
-- #### NOS - No Observable Search
+- #### NOS – No Observable Search
   ![NOS demo](gifs/NOS.gif)
-- #### POS - Partial Observable Search
+- #### POS – Partial Observable Search
   ![POS demo](gifs/POS.gif)
 
 #### 3.4.3. Hình ảnh so sánh hiệu suất của các thuật toán
