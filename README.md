@@ -1,6 +1,6 @@
 # Đồ án cá nhân cuối kỳ - AI
-- Mã lớp học: **ARIN330585_04**
 - Sinh viên thực hiện [Văn Phú Hiền - 23110213](#) 
+- Mã lớp học: **ARIN330585_04**
 - Giảng viên hướng dẫn: **TS. Phan Thị Huyền Trang**
 
 
@@ -90,13 +90,13 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.1.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-- #### BFS – Breadth First Search
+- #### BFS - Breadth First Search
   ![BFS demo](gifs/bfs.gif)
-- #### DFS – Depth First Search
+- #### DFS - Depth First Search
   ![DFS demo](gifs/dfs.gif)
-- #### UCS – Uniform Cost Search 
+- #### UCS - Uniform Cost Search 
   ![UCS demo](gifs/ucs.gif)
-- #### IDS – Iterative Deepening Search 
+- #### IDS - Iterative Deepening Search 
   ![IDS demo](gifs/ids.gif)
 
 #### 3.1.3. Hình ảnh so sánh hiệu suất của các thuật toán
@@ -120,11 +120,11 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên hàm tính toán chi phí để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.2.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-- #### Greedy – Greedy Best First Search
+- #### Greedy - Greedy Best First Search
   ![Greedy demo](gifs/greedy.gif)
-- #### A Star – A Star Search
+- #### A Star - A Star Search
   ![A* demo](gifs/a_star.gif)
-- #### IDA Star – Iterative Deepening A Star
+- #### IDA Star - Iterative Deepening A Star
   ![IDA* demo](gifs/ida_star.gif)
 
 #### 3.2.3. Hình ảnh so sánh hiệu suất của các thuật toán
@@ -145,20 +145,54 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên hàm tính toán chi phí để chuyển từ trạng thái bắt đầu sang trạng thái đích.
 
 #### 3.3.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-#### **1. SHC – Simple Hill Climbing**
-![SHC demo](gifs/SHC.gif)
-#### **2. SAHC – Steepest Ascent Hill Climbing**
-![SAHC demo](gifs/SAHC.gif)
-#### **3. Stochastic – Stochastic Hill Climbing**
-![Stochastic demo](gifs/Stochastic.gif)
-#### **5. BS – Beam Search**
-![Beam Search demo](gifs/BS.gif)
-#### **4. SA – Simulated Annealing**
-![Simulated Annealing demo](gifs/SA.gif)
+- #### SHC - Simple Hill Climbing
+  ![SHC demo](gifs/SHC.gif)
+- #### SAHC - Steepest Ascent Hill Climbing
+  ![SAHC demo](gifs/SAHC.gif)
+- #### Stochastic - Stochastic Hill Climbing
+  ![Stochastic demo](gifs/Stochastic.gif)
+- #### BS - Beam Search
+  ![BS demo](gifs/BS.gif)
+- #### SA - Simulated Annealing
+  ![SA demo](gifs/SA.gif)
+- #### GA - Genetic Algorithm
+  ![GA demo](gifs/GA.gif)
 
-#### 3.2.3. Hình ảnh so sánh hiệu suất của các thuật toán
+#### 3.3.3. Hình ảnh so sánh hiệu suất của các thuật toán
 
-#### 3.2.4. Nhận xét
+#### 3.3.4. Nhận xét
 
 ---
 
+### 3.4. Searching with Nondeterminism (Tìm kiếm trong môi trường không xác định)
+#### 3.4.1. Các thành phần chính của bài toán tìm kiếm và Solution
+- **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống trên không gian niềm tin. Trong đó, ở môi trường không nhìn thấy gì thì cả trạng thái bắt đầu và trạng thái đích sẽ là ngẫu nhiên. Còn đối với trong môi trường chỉ nhìn thấy một phần thì chỉ trạng thái đầu là ngẫu nhiên, còn trạng thái đích sẽ cố định 3 ô nhìn thấy được là 1, 2, 3, các ô còn lại sẽ là không xác định.
+- **Đối với cây AND-OR**:
+- | Trạng thái bắt đầu | Trạng thái đích |
+  |--------------------|---------------------|
+  | ![Start](assets/start_state.png) | ![Goal](assets/goal_state.png) |
+- **Đối với trong môi trường không nhìn thấy gì**:
+- | Trạng thái bắt đầu | Trạng thái đích |
+  |--------------------|---------------------|
+  | Ngẫu nhiên | Ngẫu nhiên |
+- **Đối với trong môi trường chỉ nhìn thấy một phần**:
+- | Trạng thái bắt đầu | Trạng thái đích |
+  |--------------------|---------------------|
+  | Ngẫu nhiên | ![Goal](assets/goal_state.png) |
+- **Tập hành động**: Lên, xuống, trái phải.
+- **Chi phí**: Mỗi bước di chuyển có chi phí bằng 1.
+- **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên không gian niềm tin để chuyển từ trạng thái đầu ngẫu nhiên sang trạng thái đích trong môi trường không xác định.
+
+#### 3.4.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
+- #### AOGS - AND-OR Graph Search
+  ![AOGS demo](gifs/AOGS.gif)
+- #### NOS - No Observable Search
+  ![NOS demo](gifs/NOS.gif)
+- #### POS - Partial Observable Search
+  ![POS demo](gifs/POS.gif)
+
+#### 3.4.3. Hình ảnh so sánh hiệu suất của các thuật toán
+
+#### 3.4.4. Nhận xét
+
+---
