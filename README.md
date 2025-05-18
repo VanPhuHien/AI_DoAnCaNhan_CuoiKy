@@ -250,7 +250,7 @@ Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán
 #### 3.5.4. Nhận xét
 Qua quá trình triển khai và chạy thử các thuật toán trong nhóm tìm kiếm có ràng buộc trên, có thể thấy:
 - **Backtracking**: Đơn giản, tìm lời giải chậm do cơ chế đệ quy quay lui thử nhiều nhánh để tìm trạng thái hợp lệ.
-- **AC – 3**: Hiệu quả hơn nhờ giảm miền giá trị trước khi tìm kiếm áp dụng **Backtracking** để quay lui lại tìm lời giải nhưng do CSP không phù hợp trong bài toán này, do đó không tìm được lời giải.
+- **AC – 3**: Hiệu quả hơn nhờ giảm miền giá trị trước khi tìm kiếm và áp dụng **Backtracking** để quay lui lại tìm lời giải nhưng do CSP không phù hợp trong bài toán này, do đó không tìm được lời giải.
 
 Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán trên thì: **Backtracking** có thời gian thực thi nhanh nhất.
 
