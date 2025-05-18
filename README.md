@@ -59,6 +59,7 @@
     - [3.6.3. Hình ảnh hiệu suất của thuật toán](#363-hình-ảnh-hiệu-suất-của-thuật-toán)
     - [3.6.4. Nhận xét](#364-nhận-xét)
 - [4. Kết luận](#4-kết-luận)
+- [5. Tài liệu tham khảo](#5-tài-liệu-tham-khảo)
 
   
 ## 1. Giới thiệu chung
@@ -285,3 +286,8 @@ Qua việc triển khai và xây dựng đồ án game 8-puzzle này, một số
 - So sánh hiệu suất thuật toán qua biểu đồ thời gian thực thi, giúp nhìn rõ tốc độ xử lý của các thuật toán trong từng nhóm.
 - Có hình ảnh gif minh họa của từng thuật toán, giúp cho việc quan sát các bước giải được rõ ràng hơn.
 - Có nhận xét chi tiết về cách hoạt động của thuật toán, những ưu điểm và nhược điểm, từ đó làm rõ vấn đề ứng dụng thực tế của các thuật toán.
+
+
+## 5. Tài liệu tham khảo
+Russell 2016 Artificial intelligence a modern approach
+Artificial Intelligence - CS607 Handouts lecture
