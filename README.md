@@ -105,8 +105,8 @@ Giao diện đồ họa (GUI) của chương trình được xây dựng bằng 
 #### 3.1.4. Nhận xét
 Qua quá trình triển khai và chạy thử các thuật toán trong nhóm tìm kiếm không có thông tin trên, có thể thấy:
 - **BFS** và **UCS**: Đảm bảo được lời giải tối ưu nhất, nhưng sẽ tiêu tốn nhiều bộ nhớ nhất do phải lưu trữ hàng đợi lớn.
-- **DFS**: Tiết kiệm bộ nhớ hơn nhưng do duyệt sâu nên sẽ dễ bị kẹt ở nhánh sâu, không đảm bảo được đường đi tối ưu.
-- **IDS**: Kết hợp cả ưu điểm của **BFS** và **DFS**, tìm được lời giải tối ưu và hiệu quả cho bài toán 8-puzzle.
+- **DFS**: Tiết kiệm bộ nhớ hơn nhờ sử dụng ngăn xếp nhưng do duyệt sâu nên sẽ dễ bị kẹt ở nhánh sâu, không đảm bảo được đường đi tối ưu.
+- **IDS**: Kết hợp cả ưu điểm của **BFS** và **DFS**, tìm kiếm theo độ sâu tăng dần nên tìm được lời giải tối ưu và hiệu quả cho bài toán 8-puzzle.
 
 Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán trên thì: **DFS** tuy nhiều bước giải nhưng có thời gian thực thi nhanh nhất, tiếp đến là **BFS** và **UCS** không chênh lệch thời gian bao nhiêu, cuối cùng là **IDS** mặc dù có lời giải tối ưu nhưng thời gian thực thi của thuật toán này là chậm nhất.
 
@@ -138,6 +138,12 @@ Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán
 ![Informed](assets/Informed.png)
 
 #### 3.2.4. Nhận xét
+Qua quá trình triển khai và chạy thử các thuật toán trong nhóm tìm kiếm có thông tin trên, có thể thấy:
+- **Greedy**: Giải nhanh nhờ hàm chi phí Heuristic nhưng không đảm bảo tối ưu được do dễ bị kẹt ở trạng thái, không dẫn đến được mục tiêu.
+- **A Star**: Hiệu quả cao, đảm bảo lời giải tối ưu nhờ kết hợp chi phi đường đi g(n) và hàm Heuristic h(n) nhưng tốn nhiều bộ nhờ do trạng thái được lưu trữ bằng hàng đợi ưu tiên.
+- **IDA Star**: Tiết kiệm bộ nhớ hơn A Star, phù hợp với không gian trạng thái lớn.
+
+Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán trên thì: Greedy có thời gian thực thi nhanh nhất, tiếp đến là A Star và cuối cùng, chậm nhát là IDA Star.
 
 ---
 
@@ -170,12 +176,19 @@ Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán
 ![Local](assets/Local.png)
 
 #### 3.3.4. Nhận xét
+Qua quá trình triển khai và chạy thử các thuật toán trong nhóm tìm kiếm cục bộ trên, có thể thấy:
+- **Simple Hill Climbing** và **Steepest Ascent Hill Climbing**: 2 thuật toán này chủ yếu xét trạng thái lân cận, chỉ di chuyển cục bộ nên thường bị kẹt ở giới hạn cục bộ, do đó không có lời giải trong bài toán 8-puzzle.
+- **Stochastic** và **Simulated Annealing**: nhờ có cơ chế chọn ngẫu nhiên trạng thái lân cận và chấp nhận trạng thái xấu hơn nên sẽ khắc phục được việc bị kẹt so với 2 thuật toán **Simple Hill Climbing** và **Steepest Ascent Hill Climbing** nhưng không đảm bảo lời giải tối ưu. Trong bài toán này thì **Stochastic** sẽ không có lời giải, còn **Simulated Annealing** phụ thuộc vào việc trạng thái lân cận chọn ngẫu nhiên nếu tốt sẽ có thể tìm ra lời giải.
+- **Beam Search**: Nhanh, tiết kiệm bộ nhớ nhưng dễ bỏ qua lời giải tốt nhất do đặc điểm giới hạn trạng thái.
+- **Genetic Algorithm**: Phù hợp để tối ưu hóa phức tạp nhưng do cơ chế xét trên quần thể trạng thái quá lớn dẫn đến chậm và không hiệu quả cho bài toán 8-puzzle.
+
+Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán trên thì: **Beam Search** có thời gian thực thi nhanh nhất, theo sau đó là **Stochastic**, tiếp đến là **Simulated Annealing**, và chậm nhất là **Genetic Algorithm**. Vì cả 2 thuật toán **Simple Hill Climbing** và **Steepest Ascent Hill Climbing** trong bài toán này đều bị kẹt ở trạng thái dẫn đến tự động thoát nên việc hiển thị thời gian của 2 thuật toán này không có.
 
 ---
 
 ### 3.4. Searching with Nondeterminism (Tìm kiếm trong môi trường không xác định)
 #### 3.4.1. Các thành phần chính của bài toán tìm kiếm và Solution
-- **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống trên không gian niềm tin. Trong đó, ở môi trường không nhìn thấy gì thì cả trạng thái bắt đầu và trạng thái đích sẽ là ngẫu nhiên. Còn đối với trong môi trường chỉ nhìn thấy một phần thì chỉ trạng thái đầu là ngẫu nhiên, còn trạng thái đích sẽ cố định 3 ô nhìn thấy được là 1, 2, 3, các ô còn lại sẽ là không xác định.
+- **Không gian trạng thái**: Ma trận 3x3 biểu diễn vị trí các ô số và ô trống trên không gian niềm tin. Trong đó, ở môi trường không nhìn thấy gì thì cả trạng thái bắt đầu và trạng thái đích sẽ là ngẫu nhiên. Còn đối với trong môi trường chỉ nhìn thấy một phần thì chỉ trạng thái đầu là ngẫu nhiên, còn trạng thái đích sẽ cố định 3 ô nhìn thấy được là [1, 2, 3], các ô còn lại sẽ là không xác định.
 - **Đối với cây AND-OR**:
 - | Trạng thái bắt đầu | Trạng thái đích |
   |--------------------|---------------------|
@@ -204,6 +217,11 @@ Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán
 ![Nondeterminism](assets/Nondeterminism.png)
 
 #### 3.4.4. Nhận xét
+Qua quá trình triển khai và chạy thử các thuật toán trong nhóm tìm kiếm cục bộ trên, có thể thấy:
+- **AND-OR Graph Search**: Tìm kiếm trên đồ thị cây AND-OR, phải xử lý nhiều nhánh phức tạp, mặc dù linh hoạt nhưng không tối ưu cho bài toán 8-puzzle.
+- **No Observable Search** và **Partial Observable Search**: Hiệu quả trong môi trường không xác định nhờ hoạt động trên không gian niềm tin, nhưng sử dụng bộ nhớ rất lớn do phải xử lý không gian niềm tin lớn. **Partial Observable Search** sẽ hoạt động hiệu quả hơn **No Observable Search** vì giảm được không gian tìm kiếm nhờ có quan sát một phần đã được cố định, trong bài toán này là hàng đầu cố định [1, 2, 3].
+
+Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán trên thì: **Partial Observable Search** thực thi nhanh nhất, tiếp đến là **AND-OR Graph Search**, chậm nhất là **No Observable Search**.
 
 ---
 
@@ -230,6 +248,11 @@ Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán
 ![Constraint](assets/Constraint.png)
 
 #### 3.5.4. Nhận xét
+Qua quá trình triển khai và chạy thử các thuật toán trong nhóm tìm kiếm có ràng buộc trên, có thể thấy:
+- **Backtracking**: Đơn giản, tìm lời giải chậm do cơ chế đệ quy quay lui thử nhiều nhánh để tìm trạng thái hợp lệ.
+- **AC – 3**: Hiệu quả hơn nhờ giảm miền giá trị trước khi tìm kiếm áp dụng **Backtracking** để quay lui lại tìm lời giải nhưng do CSP không phù hợp trong bài toán này, do đó không tìm được lời giải.
+
+Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán trên thì: **Backtracking** có thời gian thực thi nhanh nhất.
 
 ---
 
@@ -253,7 +276,7 @@ Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán
 ![Reinforcement Learning](assets/RL.png)
 
 #### 3.6.4. Nhận xét
-
+Qua quá trình triển khai và chạy thử thuật toán **Q – Learning** trong nhóm **Học tăng cường**, có thể thấy: nhờ việc học qua nhiều lần thử, thuật toán này phù hợp trong bài toán học từ kinh nghiệm, nhưng trong bài toán 8-puzzle này, do không gian trạng thái lớn và số lần thử (5000 episodes, tối đa 500 bước mỗi episode) không đủ để đạt được chính sách tối ưu, dẫn đến không tìm được lời giải.
 
 ## 4. Kết luận
 
