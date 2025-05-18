@@ -63,6 +63,7 @@
   
 ## 1. Giới thiệu chung
 - Đồ án xây dựng game giải bài toán **8-puzzle** có áp dụng các thuật toán tìm kiếm để tìm lời giải, chương trình được thiết kế với giao diện đơn giản, trực quan để người dùng dễ dàng tương tác và lựa chọn thuật toán phù hợp.
+- Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**.
 - Giao diện chính của chương trình:
 ![Giao diện chương trình](assets/giaodien.png)
 Trong giao diện trên gồm:
@@ -75,7 +76,6 @@ Trong giao diện trên gồm:
 
 ## 2. Mục tiêu
 Đồ án tập trung vào xây dựng chương trình giải bài toán **8-puzzle** nhằm mục tiêu tìm hiểu, triển khai và đánh giá hiệu suất của các thuật toán tìm kiếm khi áp dụng vào bài toán — yêu cầu sắp xếp lại các ô số từ trạng thái bắt đầu (Start State) sao cho đúng với trạng thái đích (Goal State) thông qua các hành động di chuyển hợp lệ.
-Giao diện đồ họa (GUI) của chương trình được xây dựng bằng thư viện **Pygame**.
 
 
 ## 3. Nội dung
@@ -206,7 +206,7 @@ Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán
 - **Solution**: Một chuỗi các trạng thái được áp dụng các hành động dựa trên không gian niềm tin để chuyển từ trạng thái đầu ngẫu nhiên sang trạng thái đích trong môi trường không xác định.
 
 #### 3.4.2. Hình ảnh gif của từng thuật toán khi áp dụng lên trò chơi
-- #### AOGS – AND-OR Graph Search
+- #### AOGS – AND–OR Graph Search
   ![AOGS demo](gifs/AOGS.gif)
 - #### NOS – No Observable Search
   ![NOS demo](gifs/NOS.gif)
@@ -279,4 +279,9 @@ Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán
 Qua quá trình triển khai và chạy thử thuật toán **Q – Learning** trong nhóm **Học tăng cường**, có thể thấy: nhờ việc học qua nhiều lần thử, thuật toán này phù hợp trong bài toán học từ kinh nghiệm, nhưng trong bài toán 8-puzzle này, do không gian trạng thái lớn và số lần thử (5000 episodes, tối đa 500 bước mỗi episode) không đủ để đạt được chính sách tối ưu, dẫn đến không tìm được lời giải.
 
 ## 4. Kết luận
-
+Qua việc triển khai và xây dựng đồ án game 8-puzzle này, một số kết quả mà đồ án này đạt được như sau:
+- Triển khai được 19 thuật toán thuộc 6 nhóm gồm: Nhóm thuật toán tìm kiếm không có thông tin, tìm kiếm có thông tin, tìm kiếm cục bộ, tìm kiếm trong môi trường không xác định, tìm kiếm có ràng buộc và học tăng cường.
+- Tích hợp các thuật toán vào giao diện Pygame để trực quan hóa quá trình giải bài toán 8-puzzle.
+- So sánh hiệu suất thuật toán qua biểu đồ thời gian thực thi, giúp nhìn rõ tốc độ xử lý của các thuật toán trong từng nhóm.
+- Có hình ảnh gif minh họa của từng thuật toán, giúp cho việc quan sát các bước giải được rõ ràng hơn.
+- Có nhận xét chi tiết về cách hoạt động của thuật toán, những ưu điểm và nhược điểm, từ đó làm rõ vấn đề ứng dụng thực tế của các thuật toán.
