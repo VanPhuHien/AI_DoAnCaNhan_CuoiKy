@@ -182,7 +182,7 @@ Qua quá trình triển khai và chạy thử các thuật toán trong nhóm tì
 - **Beam Search**: Nhanh, tiết kiệm bộ nhớ nhưng dễ bỏ qua lời giải tốt nhất do đặc điểm giới hạn trạng thái.
 - **Genetic Algorithm**: Phù hợp để tối ưu hóa phức tạp nhưng do cơ chế xét trên quần thể trạng thái quá lớn dẫn đến chậm và không hiệu quả cho bài toán 8-puzzle.
 
-Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán trên thì: **Beam Search** có thời gian thực thi nhanh nhất, theo sau đó là **Stochastic**, tiếp đến là **Simulated Annealing**, và chậm nhất là **Genetic Algorithm**. Vì cả 2 thuật toán **Simple Hill Climbing** và **Steepest Ascent Hill Climbing** trong bài toán này đều bị kẹt ở trạng thái dẫn đến tự động thoát nên việc hiển thị thời gian của 2 thuật toán này không có.
+Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán trên thì: **Beam Search** có thời gian thực thi nhanh nhất, theo sau đó là **Stochastic**, tiếp đến là **Simulated Annealing**, và chậm nhất là **Genetic Algorithm**. Vì cả 2 thuật toán **Simple Hill Climbing** và **Steepest Ascent Hill Climbing** trong bài toán này đều bị kẹt ở trạng thái dẫn đến tự động thoát sớm nên việc hiển thị thời gian thực thi của 2 thuật toán này không có.
 
 ---
 
