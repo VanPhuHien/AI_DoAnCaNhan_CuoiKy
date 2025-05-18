@@ -107,6 +107,7 @@ Qua quá trình triển khai và chạy thử các thuật toán trong nhóm tì
 - **BFS** và **UCS**: Đảm bảo được lời giải tối ưu nhất, nhưng sẽ tiêu tốn nhiều bộ nhớ nhất do phải lưu trữ hàng đợi lớn.
 - **DFS**: Tiết kiệm bộ nhớ hơn nhưng do duyệt sâu nên sẽ dễ bị kẹt ở nhánh sâu, không đảm bảo được đường đi tối ưu.
 - **IDS**: Kết hợp cả ưu điểm của **BFS** và **DFS**, tìm được lời giải tối ưu và hiệu quả cho bài toán 8-puzzle.
+- 
 Thông qua biểu đồ so sánh thời gian thực thi của các thuật toán trên thì: **DFS** tuy nhiều bước giải nhưng có thời gian thực thi nhanh nhất, tiếp đến là **BFS** và **UCS** không chênh lệch thời gian bao nhiêu, cuối cùng là **IDS** mặc dù có lời giải tối ưu nhưng thời gian thực thi của thuật toán này là chậm nhất.
 
 ---
