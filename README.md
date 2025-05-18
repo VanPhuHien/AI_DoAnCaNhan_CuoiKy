@@ -289,5 +289,5 @@ Qua việc triển khai và xây dựng đồ án game 8-puzzle này, một số
 
 
 ## 5. Tài liệu tham khảo
-Russell 2016 Artificial intelligence a modern approach
-Artificial Intelligence - CS607 Handouts lecture
+- Russell 2016 Artificial intelligence a modern approach
+- Artificial Intelligence - CS607 Handouts lecture
